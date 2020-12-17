@@ -16,7 +16,7 @@ class Trending extends Component {
     const { movie } = this.state;
 
     return (
-      <div className="grid grid-flow-col auto-cols-min gap-2">
+      <div className=" container mx-auto grid grid-cols-1 md:grid-cols-6 gap-1">
         {movie.map((movie) => {
           return (
             <div>
