@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink, Route, Switch } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,12 +11,49 @@ const Header = () => {
               <div class="flex-shrink-0">
                 <h1 className="text-2xl text-white">Movie App</h1>
               </div>
+              <div class="origin right-0 mt-52 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                  <NavLink to="/trending">
+                    <a
+                      href
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                      role="menuitem"
+                    >
+                      Trending
+                    </a>
+                  </NavLink>
+                  <NavLink to="/toprated">
+                    <a
+                      href
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                      role="menuitem"
+                    >
+                      Top Rated
+                    </a>
+                  </NavLink>
+                  <NavLink to="/upcoming" >
+                    <a
+                      href
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                      role="menuitem"
+                    >
+                      Upcoming
+                    </a>
+                  </NavLink>
+                  <NavLink to="/latest" >
+                    <a
+                      href
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                      role="menuitem"
+                    >
+                      Latest
+                    </a>
+                  </NavLink>
+                </div>
+              </div>
               <div class="hidden md:block">
                 <div class="ml-10 flex items-baseline space-x-4">
-                  <a
-                    href
-                    class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
+                  <a href class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">
                     Movies
                   </a>
                   <a
