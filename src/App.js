@@ -1,12 +1,12 @@
 import "./App.css";
 import Header from "./constants/Header";
-import Home from './pages/Home';
+import Routes from './constants/Routes';
 
 function App() {
   return (
     <>
       <Header />
-      <Home />
+      <Routes />
     </>
   );
 }

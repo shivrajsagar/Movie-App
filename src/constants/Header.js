@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Route, Switch } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -9,7 +9,9 @@ const Header = () => {
           <div class="flex items-center justify-between h-16">
             <div class="flex items-center">
               <div class="flex-shrink-0">
-                <h1 className="text-2xl text-white">Movie App</h1>
+                <NavLink to="/">
+                  <h1 className="text-2xl text-white">Movie App</h1>
+                </NavLink>
               </div>
               <div class="origin right-0 mt-52 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                 <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
@@ -31,7 +33,7 @@ const Header = () => {
                       Top Rated
                     </a>
                   </NavLink>
-                  <NavLink to="/upcoming" >
+                  <NavLink to="/upcoming">
                     <a
                       href
                       class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
@@ -40,7 +42,7 @@ const Header = () => {
                       Upcoming
                     </a>
                   </NavLink>
-                  <NavLink to="/latest" >
+                  <NavLink to="/latest">
                     <a
                       href
                       class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
