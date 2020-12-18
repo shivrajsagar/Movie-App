@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./constants/Footer";
 import Header from "./constants/Header";
 import Routes from './constants/Routes';
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <Routes />
+      <Footer />
     </>
   );
 }
