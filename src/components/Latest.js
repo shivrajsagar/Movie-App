@@ -14,7 +14,6 @@ class Latest extends Component {
   }
   render() {
     const { movie } = this.state;
-
     return (
       <div className=" container mx-auto grid grid-cols-1 md:grid-cols-6 gap-1">
         <Card movie={movie} />
