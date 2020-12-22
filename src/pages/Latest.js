@@ -1,9 +1,13 @@
-const Latest = () => {
+import Latest from "../components/Latest";
+import Heading from "../constants/Heading";
+
+const Latest1 = () => {
   return (
     <div>
-      <h1>Latest</h1>
+      <Heading>Latest</Heading>
+      <Latest />
     </div>
   );
 };
 
-export default Latest;
+export default Latest1;

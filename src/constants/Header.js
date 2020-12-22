@@ -9,50 +9,12 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0 text-white">
                 <NavLink to="/">
                   <h1 classNameName="text-2xl text-white">Movie App</h1>
                 </NavLink>
               </div>
               <div className="origin mt-52 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                  <NavLink to="/trending">
-                    <a
-                      href
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                      role="menuitem"
-                    >
-                      Trending
-                    </a>
-                  </NavLink>
-                  <NavLink to="/toprated">
-                    <a
-                      href
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                      role="menuitem"
-                    >
-                      Top Rated
-                    </a>
-                  </NavLink>
-                  <NavLink to="/upcoming">
-                    <a
-                      href
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                      role="menuitem"
-                    >
-                      Upcoming
-                    </a>
-                  </NavLink>
-                  <NavLink to="/latest">
-                    <a
-                      href
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                      role="menuitem"
-                    >
-                      Latest
-                    </a>
-                  </NavLink>
-                </div>
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
@@ -81,7 +43,7 @@ const Header = () => {
             <>
               <span className="rounded-md shadow-sm">
                 <Menu.Button className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
-                  <span>Options</span>
+                  <span>Movies</span>
                   <svg
                     className="w-5 h-5 ml-2 -mr-1"
                     viewBox="0 0 20 20"
@@ -109,78 +71,58 @@ const Header = () => {
                   static
                   className="absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
                 >
-                  <div className="px-4 py-3">
-                    <p className="text-sm leading-5">Signed in as</p>
-                    <p className="text-sm font-medium leading-5 text-gray-900 truncate">
-                      tom@example.com
-                    </p>
-                  </div>
-
                   <div className="py-1">
                     <Menu.Item>
                       {({ active }) => (
+                        <NavLink to="/trending">
                         <a
-                          href="#account-settings"
-                          className={`${
-                            active
-                              ? "bg-gray-100 text-gray-900"
-                              : "text-gray-700"
-                          } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
+                          href
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                          role="menuitem"
                         >
-                          Account settings
+                          Trending
                         </a>
+                      </NavLink>
                       )}
                     </Menu.Item>
                     <Menu.Item>
                       {({ active }) => (
+                        <NavLink to="/toprated">
                         <a
-                          href="#support"
-                          className={`${
-                            active
-                              ? "bg-gray-100 text-gray-900"
-                              : "text-gray-700"
-                          } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
+                          href
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                          role="menuitem"
                         >
-                          Support
+                          Top Rated
                         </a>
+                      </NavLink>
                       )}
-                    </Menu.Item>
-                    <Menu.Item
-                      as="span"
-                      disabled
-                      className="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left text-gray-700 cursor-not-allowed opacity-50"
-                    >
-                      New feature (soon)
                     </Menu.Item>
                     <Menu.Item>
                       {({ active }) => (
+                        <NavLink to="/upcoming">
                         <a
-                          href="#license"
-                          className={`${
-                            active
-                              ? "bg-gray-100 text-gray-900"
-                              : "text-gray-700"
-                          } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
+                          href
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                          role="menuitem"
                         >
-                          License
+                          Upcoming
                         </a>
+                      </NavLink>
                       )}
                     </Menu.Item>
-                  </div>
-
-                  <div className="py-1">
+                  
                     <Menu.Item>
                       {({ active }) => (
-                        <a
-                          href="#sign-out"
-                          className={`${
-                            active
-                              ? "bg-gray-100 text-gray-900"
-                              : "text-gray-700"
-                          } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
-                        >
-                          Sign out
-                        </a>
+                         <NavLink to="/latest">
+                         <a
+                           href
+                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                           role="menuitem"
+                         >
+                           Latest
+                         </a>
+                       </NavLink>
                       )}
                     </Menu.Item>
                   </div>

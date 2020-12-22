@@ -1,10 +1,14 @@
-const Toprated = () => {
+import  Toprated from "../components/Toprated";
+import Heading from "../constants/Heading";
+
+const Toprated1 = () => {
     return (
       <div>
-        <h1>Toprated</h1>
+        <Heading>Top Rated</Heading>
+        <Toprated />
       </div>
     );
   };
   
-  export default Toprated;
+  export default Toprated1;
   

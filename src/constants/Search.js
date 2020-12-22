@@ -40,7 +40,7 @@ class Search extends Component {
         </div>
 
         {value === "" ? null : (
-          <div className=" container mx-auto grid grid-cols-1 md:grid-cols-6 gap-1">
+          <div className="mt-2 container mx-auto grid grid-cols-1 md:grid-cols-6 gap-1">
             {movie.map((movie) => {
               return (
                 <div>

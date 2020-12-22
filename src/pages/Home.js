@@ -4,6 +4,8 @@ import Trending from "../components/Trending";
 import Toprated from "../components/Toprated";
 import Upcoming from "../components/Upcoming";
 import Latest from "../components/Latest";
+import GetList from "../components/GetList";
+import GetDetail from "../components/GetDetail";
 
 const Home = () => {
   return (
@@ -17,6 +19,10 @@ const Home = () => {
       <Upcoming />
       <Heading>Latest</Heading>
       <Latest />
+      <Heading>Get Movie List</Heading>
+      <GetList />
+      <Heading>Get Detail</Heading>
+      <GetDetail />
     </>
   );
 };
